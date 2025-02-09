@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RGB Color Picker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5 p-4 shadow-lg rounded bg-light">
+    <h1 class="text-center mb-4 text-primary">RGB Color Picker 🎨</h1>
+
+    <!-- Sliders and Inputs -->
+    <div class="row g-4">
+      <div class="col-md-4">
+        <label for="redSlider" class="form-label text-danger">Red (R)</label>
+        <input type="range" class="form-range" id="redSlider" min="0" max="255" value="0">
+        <input type="number" id="redInput" class="form-control mt-1" min="0" max="255" value="0">
+      </div>
+      <div class="col-md-4">
+        <label for="greenSlider" class="form-label text-success">Green (G)</label>
+        <input type="range" class="form-range" id="greenSlider" min="0" max="255" value="0">
+        <input type="number" id="greenInput" class="form-control mt-1" min="0" max="255" value="0">
+      </div>
+      <div class="col-md-4">
+        <label for="blueSlider" class="form-label text-primary">Blue (B)</label>
+        <input type="range" class="form-range" id="blueSlider" min="0" max="255" value="0">
+        <input type="number" id="blueInput" class="form-control mt-1" min="0" max="255" value="0">
+      </div>
+    </div>
+
+    <!-- Color Picker -->
+    <div class="mt-4">
+      <label for="colorPicker" class="form-label">Select Color</label>
+      <input type="color" id="colorPicker" class="form-control form-control-color w-25">
+    </div>
+
+    <!-- Color Box -->
+    <div class="color-box mt-4 text-center shadow-sm" id="colorBox">
+      <p id="hexCode" class="hex-code">#000000</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
